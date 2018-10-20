@@ -2,12 +2,8 @@
     margin-right: -15px;
     margin-left: -15px;
 }
-
-body {
-    background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
-    height: 100%;
-}
 html {
+    background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
     height: 100%;
 }
 
@@ -17,7 +13,7 @@ html {
 
 @media only screen and (max-width: 700px) {
     .landing {
-        padding-top: 275px;
+        padding-top: calc(100vh/2);
         font-family: 'Source Sans Pro', sans-serif;
         height: 100vh;
         
