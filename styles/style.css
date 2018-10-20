@@ -1,0 +1,50 @@
+.no-gutters {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.landing {
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .landing {
+    padding-top: 275px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 100vh;
+  }
+  .landing .name {
+    font-size: 20px;
+    position: relative;
+    left: -120px;
+    top: 10px;
+  }
+  .landing .header {
+    font-size: 60px;
+    display: inline;
+  }
+  .landing .computer {
+    width: 60px;
+    height: auto;
+    position: relative;
+    top: -15px;
+    left: 15px;
+  }
+
+  .portfolio {
+    background-color: white;
+    color: #3155d6;
+    padding: 30px 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
