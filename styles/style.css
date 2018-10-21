@@ -3,8 +3,14 @@
   margin-left: -15px;
 }
 
-html {
+body {
   background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
   height: 100%;
 }
 
@@ -14,8 +20,7 @@ html {
 
 @media only screen and (max-width: 700px) {
   .landing {
-    padding-top: calc(100vh/2);
-    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 275px;
     height: 100vh;
   }
   .landing .name {
@@ -27,6 +32,7 @@ html {
   .landing .header {
     font-size: 60px;
     display: inline;
+    font-weight: 10;
   }
   .landing .computer {
     width: 60px;
@@ -39,7 +45,10 @@ html {
   .portfolio {
     background-color: white;
     color: #3155d6;
-    padding: 30px 0px;
+    padding: 50px 0px;
+  }
+  .portfolio .project {
+    color: black;
   }
 }
 
