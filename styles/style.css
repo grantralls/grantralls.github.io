@@ -21,6 +21,13 @@ html {
 }
 
 @media only screen and (max-width: 700px) {
+  .hammen img {
+    width: 50px;
+    height: auto;
+    position: relative;
+    top: 30px;
+  }
+
   .landing {
     padding-top: calc(100vh/3);
     height: 100vh;
