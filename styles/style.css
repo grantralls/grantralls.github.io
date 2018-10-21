@@ -8,11 +8,8 @@
   padding: 0px;
 }
 
-body {
+.background {
   background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -50,11 +47,11 @@ html {
   .portfolio {
     background-color: white;
     color: #3155d6;
-    margin: 30px 0px;
+    padding: 30px 0px;
   }
   .portfolio .project {
     color: black;
-    margin: 30px 0px;
+    margin-top: 30px;
   }
   .portfolio .project img {
     margin-bottom: 10px;
@@ -65,7 +62,21 @@ html {
     margin-top: 20px;
     color: #5b5b5b;
     font-family: "Source Serif Pro", serif;
-    font-size: 15px;
+    font-size: 17px;
+  }
+
+  .bio {
+    color: white;
+    padding: 30px 0px;
+  }
+  .bio p {
+    margin-top: 20px;
+    font-family: "Source Serif Pro", serif;
+  }
+  .bio img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
   }
 }
 
