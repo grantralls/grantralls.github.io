@@ -51,10 +51,24 @@ html {
     .portfolio {
         background-color: white;
         color: #3155d6;
-
+        margin: 30px 0px;
 
         .project {
             color: black;
+            margin: 30px 0px;
+
+            img {
+                margin-bottom: 10px;
+                width: 20px;
+                height: auto;
+            }
+
+            p {
+                margin-top: 20px;
+                color: #5b5b5b;
+                font-family: 'Source Serif Pro', serif;
+                font-size: 15px;
+            }
         }
     }
 }
