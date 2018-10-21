@@ -3,6 +3,11 @@
   margin-left: -15px;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
   background-repeat: no-repeat;
@@ -45,7 +50,6 @@ html {
   .portfolio {
     background-color: white;
     color: #3155d6;
-    padding: 50px 0px;
   }
   .portfolio .project {
     color: black;
