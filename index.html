@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
         <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -19,6 +20,7 @@
         </script>
         
     </head>
+
     <body>
         <div class="background">
             <div class="container-fluid">
@@ -40,24 +42,40 @@
                     <h1>Portfolio</h1>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 project">
+                            <div class="col-lg-6 project" id="container1">
                                 <img src="static/icons/Dollar Sign Icon.png" alt="">
                                 <h3>Kaunto</h3>
                                 <p>Kaunto was a web project made with Mongo and Nodejs with Expressjs. The problem was managers at the store spent too much time counting safe at the end of the night. This was because of all the recording and calculations that needed to be done by hand. Kaunto accepts a log in by a manager and once the number of rolls of certain coins is inputed the calculations are done automatically and saved to a database.</p>
+                                <div class="row buttons justify-content-center">
+                                    <div class="col-lg-4 col-6 live">
+                                        <a href="#">LIVE not available</a>
+                                    </div>
+                                    <div class="col-lg-4 col-6 source">
+                                        <a href="https://github.com/grantralls/kaunto">SOURCE</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-6 project appsys">
                                 <img src="static/icons/Document Icon.png" alt="">
                                 <h3>Application System</h3>
                                 <p>The Application System was made with php with wordpress as a CMS. The problem was that it was difficult for an applicant to understand what the expectations are if they were to get the job. I learned how to use data from an external database to read and write data. I have also learned how to visualize data in a way that is easy to understand.</p>
+                                <div class="row buttons justify-content-center">
+                                    <div class="col-lg-4 col-6 live">
+                                        <a href="http://www.eatcfa.com">LIVE</a>
+                                    </div>
+                                    <div class="col-lg-4 col-6 source">
+                                        <a href="https://github.com/grantralls/cfa_theme">SOURCE</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bio text-center">
-                    <h1>Who Am I</h1>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 text-center">
+                                <h1>Who Am I?</h1>
                                 <p>I’m a Computer Science student who loves programming, video games, and listening to music. I have been learning graphic design lately for the fun of it. If you would like to get in touch with me for photography or web development, scroll just below this section.</p>
                             </div>
                             <div class="col-lg-4">
@@ -74,4 +92,6 @@
     </body>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/p5/p5.min.js"></script>
+<script src="js/p5/sketch.js"></script>
 </html>

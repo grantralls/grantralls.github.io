@@ -39,8 +39,8 @@ html {
   color: #3155d6;
   padding: 30px 0px;
 }
-.portfolio .appsys {
-  padding-top: 12px;
+.portfolio .appsys img {
+  width: 28px !important;
 }
 .portfolio .project {
   color: black;
@@ -54,6 +54,24 @@ html {
   margin-top: 20px;
   color: #5b5b5b;
   font-family: "Source Serif Pro", serif;
+}
+.portfolio .project .buttons {
+  font-family: "Source Sans Pro", sans-serif !important;
+  margin-top: 50px;
+}
+.portfolio .project .buttons .live {
+  background-color: #3155d6;
+  padding: 10px 0px;
+}
+.portfolio .project .buttons .live a {
+  color: white;
+}
+.portfolio .project .buttons .source {
+  padding: 10px 0px;
+  background-color: #d1daff;
+}
+.portfolio .project .buttons .source a {
+  color: #3155d6;
 }
 
 .bio {
