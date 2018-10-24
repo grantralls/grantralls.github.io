@@ -137,6 +137,9 @@ html {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .portfolio {
+    padding: 100px 0px;
+  }
   .portfolio h1 {
     font-size: 50px;
   }
@@ -148,6 +151,9 @@ html {
     font-size: 20px;
   }
 
+  .bio {
+    padding: 100px 0px;
+  }
   .bio h1 {
     font-size: 50px;
   }
@@ -155,7 +161,7 @@ html {
     width: 300px;
   }
   .bio p {
-    padding-top: 30px;
+    padding-top: 40px;
     font-size: 20px;
   }
 }
