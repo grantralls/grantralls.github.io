@@ -1,186 +1,179 @@
-html {
-  height: 100%;
+html, body {
+  background-color: #e2e2e2;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: Garamond;
+}
+html h1, html h2, html h3, body h1, body h2, body h3 {
+  font-family: Oswald;
+  letter-spacing: 1.8px;
 }
 
-.no-gutters {
-  margin-right: -15px;
-  margin-left: -15px;
+footer {
+  background-color: #262626;
+  width: 100%;
+  height: 20em;
+  padding-bottom: 40px;
 }
-
-* {
-  margin: 0px;
-  padding: 0px;
+footer h1 {
+  color: #e2e2e2;
+  font-size: 80px;
+  position: relative;
+  top: -25px;
+  margin: 0;
+  padding: 0;
 }
-
-.background {
-  background-image: linear-gradient(to bottom right, #9cabe2, #3155d6);
+footer #content {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
 }
-
-.landing {
+footer #content a {
+  font-style: normal;
+  color: #e2e2e2;
+}
+footer #content h2 {
+  color: #e2e2e2;
+  font-style: normal;
+}
+footer #content small {
+  font-size: 15px;
   color: white;
-  padding-top: calc(100vh/3);
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero {
+  width: 100%;
   height: 100vh;
-}
-.landing .name {
-  position: relative;
-  top: 10px;
-}
-.landing .header {
-  display: inline;
-}
-.landing .computer {
-  height: auto;
-  position: relative;
-  left: 15px;
-}
-
-.portfolio {
-  background-color: white;
-  color: #3155d6;
-  padding: 30px 0px;
-}
-.portfolio .appsys img {
-  width: 28px !important;
-}
-.portfolio .project {
-  color: black;
-  margin-top: 30px;
-}
-.portfolio .project img {
-  margin-bottom: 10px;
-  height: auto;
-}
-.portfolio .project p {
-  margin-top: 20px;
-  color: #5b5b5b;
-  font-family: "Source Serif Pro", serif;
-}
-.portfolio .project .buttons {
-  font-family: "Source Sans Pro", sans-serif !important;
-  margin-top: 50px;
-}
-.portfolio .project .buttons .live {
-  background-color: #3155d6;
-  padding: 10px 0px;
-}
-.portfolio .project .buttons .live a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/trees.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.portfolio .project .buttons .source {
-  padding: 10px 0px;
-  background-color: #d1daff;
+.hero h1 {
+  font-size: 5em;
+  animation: fadeIn;
+  animation-duration: 3s;
+  margin: 0;
 }
-.portfolio .project .buttons .source a {
-  color: #3155d6;
+.hero h2 {
+  animation: fadeIn;
+  animation-duration: 3s;
 }
-
-.bio {
+.hero .btn {
+  display: block;
+  width: 200px;
+  padding: 0.75em;
+  margin: 50px auto 0 auto;
   color: white;
-  padding: 30px 0px;
+  text-decoration: none;
+  font-size: 1.5em;
+  animation: fadeIn;
+  animation-duration: 3s;
+  border: 3px solid white;
+  border-radius: 20px;
 }
-.bio p {
-  font-family: "Source Serif Pro", serif;
-}
-.bio img {
-  height: auto;
+.hero .btn:hover {
+  text-decoration: underline;
 }
 
-@media only screen and (min-width: 701px) {
-  .hammen {
-    display: none;
-  }
-
-  .landing .name {
-    font-size: 30px;
-    left: -200px;
-    font-weight: 1;
-  }
-  .landing .header {
-    font-size: 90px;
-    font-weight: 10;
-  }
-  .landing .computer {
-    width: 80px;
-    top: -25px;
-  }
-
-  .portfolio .project img {
-    width: 20px;
-  }
-  .portfolio .project p {
-    font-size: 17px;
-  }
-
-  .bio p {
-    padding: 20px 0px;
-  }
-  .bio img {
-    width: 200px;
-  }
+main {
+  width: 80%;
+  margin: 0px auto;
 }
-@media only screen and (max-width: 700px) {
-  .hammen img {
-    width: 50px;
-    height: auto;
-    position: relative;
-    top: 30px;
-  }
-
-  .landing .name {
-    font-size: 20px;
-    left: -120px;
-  }
-  .landing .header {
-    font-size: 60px;
-    font-weight: 10;
-  }
-  .landing .computer {
-    width: 60px;
-    top: -15px;
-  }
-
-  .portfolio .project img {
-    width: 20px;
-  }
-  .portfolio .project p {
-    font-size: 17px;
-  }
-
-  .bio p {
-    margin-top: 20px;
-  }
-  .bio img {
-    width: 300px;
-    margin-top: 20px;
-  }
+main h2 {
+  font-size: 3em;
 }
-@media only screen and (min-width: 1024px) {
-  .portfolio {
-    padding: 100px 0px;
-  }
-  .portfolio h1 {
-    font-size: 50px;
-  }
-  .portfolio .project h3 {
-    font-size: 35px;
-  }
-  .portfolio .project p {
-    padding: 0px 20px;
-    font-size: 20px;
+main #who {
+  margin: 25vh 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: space-evenly;
+}
+main #who #text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+main #who #text h3 {
+  margin: 30px 0;
+}
+main #who #text p {
+  margin: 0;
+  max-width: 30em;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  margin-left: 2em;
+}
+main #who img {
+  max-width: 550px;
+  margin-top: 2em;
+}
+main section#skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  justify-items: center;
+  margin: 25vh auto;
+}
+main section#skills h3 {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+main section#skills ul {
+  list-style-type: none;
+}
+main section#skills ul li {
+  font-size: 1.5em;
+  line-height: 1.75em;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero h1 {
+    font-size: 10vw !important;
   }
 
-  .bio {
-    padding: 100px 0px;
+  main {
+    width: 90%;
   }
-  .bio h1 {
-    font-size: 50px;
+  main h2 {
+    font-size: 2.5em !important;
   }
-  .bio img {
-    width: 300px;
+  main #who p {
+    width: 90vw !important;
+    margin-bottom: 50px !important;
+    margin-left: 0 !important;
   }
-  .bio p {
-    padding-top: 40px;
-    font-size: 20px;
+  main #who img {
+    width: 80vw !important;
+  }
+  main section#projects h2 {
+    font-size: 2em !important;
+  }
+  main section#projects h3 {
+    font-size: 1.3em !important;
+  }
+  main section#skills h2 {
+    margin-left: 0 !important;
+  }
+  main section#skills ul li {
+    margin-left: 0 !important;
+    text-align: center;
   }
 }
 

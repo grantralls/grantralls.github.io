@@ -1,0 +1,50 @@
+@media screen and (max-width: 1400px) {
+
+  .hero {
+    h1 {
+      font-size: 10vw !important;
+    }
+  }
+
+  main {
+    
+    width: 90%;
+
+    h2 {
+      font-size: 2.5em !important;
+    }
+    
+    #who {
+      p {
+        width: 90vw !important;
+        margin-bottom: 50px !important;
+        margin-left: 0 !important;
+      }
+
+      img {
+        width: 80vw !important;
+      }
+    }
+
+    section#projects {
+      h2 {
+        font-size: 2em !important;
+      }
+      h3 {
+        font-size: 1.3em !important;
+      }
+    }
+
+    section#skills {
+      h2 {
+        margin-left: 0 !important;
+      }
+      ul {
+        li {
+          margin-left: 0 !important;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
