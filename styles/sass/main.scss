@@ -1,67 +1,37 @@
-$parSize: 1.5em;
-$parHeight: 1.75em;
+@font-face {
+  font-family: "Niagara-Solid";
+  src: url('../public/fonts/NIAGSOL.TTF')
+}
 
-$smallParSize: 1.3em;
-$smallParHeight: 1.25em;
+h1 {
+  font-family: Niagara-Solid;
+  font-size: 170px;
+  letter-spacing: 0.07em;
+  font-weight: normal;
+  margin: 0;
+}
 
-$headSize: 3em;
+h2 {
+  font-family: Niagara-Solid;
+  font-size: 60px;
+  letter-spacing: 0.07em;
+  font-weight: normal;
+}
 
-$smallHeadSize: 1.8em;
-
-$sectionSpacing: 25vh;
+h3 {
+  font-family: Myriad Pro;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+}
 
 html, body {
-  background-color: #e2e2e2;
-  padding: 0 !important;
-  margin: 0 !important;
-  font-family: Garamond;
-
-  h1, h2, h3 {
-    font-family: Oswald;
-    letter-spacing: 1.8px;
-  }
-
+  height: 100%;
+  margin: 0;
 }
 
-footer {
-  background-color: #262626;
-  width: 100%;
-  height: 20em;
-  padding-bottom: 40px;
-
-  h1 {
-    color: #e2e2e2;
-    font-size: 80px;
-    position: relative;
-    top: -25px;
-    margin: 0;
-    padding: 0;
-  }
-
-  #content {
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-
-    a {
-      font-style: normal;
-      color: #e2e2e2;
-    }
-
-    h2 {
-      color: #e2e2e2;
-      font-style: normal;
-    }
-
-    small {
-      font-size: 15px;
-      color: white;
-      margin-top: 40px;
-      
-    }
-  }
+body {
 }
-
 
 @import 'hero';
 @import 'content';

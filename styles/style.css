@@ -1,180 +1,77 @@
+@font-face {
+  font-family: "Niagara-Solid";
+  src: url("../public/fonts/NIAGSOL.TTF");
+}
+h1 {
+  font-family: Niagara-Solid;
+  font-size: 170px;
+  letter-spacing: 0.07em;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  font-family: Niagara-Solid;
+  font-size: 60px;
+  letter-spacing: 0.07em;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Myriad Pro;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+}
+
 html, body {
-  background-color: #e2e2e2;
-  padding: 0 !important;
-  margin: 0 !important;
-  font-family: Garamond;
-}
-html h1, html h2, html h3, body h1, body h2, body h3 {
-  font-family: Oswald;
-  letter-spacing: 1.8px;
-}
-
-footer {
-  background-color: #262626;
-  width: 100%;
-  height: 20em;
-  padding-bottom: 40px;
-}
-footer h1 {
-  color: #e2e2e2;
-  font-size: 80px;
-  position: relative;
-  top: -25px;
-  margin: 0;
-  padding: 0;
-}
-footer #content {
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-footer #content a {
-  font-style: normal;
-  color: #e2e2e2;
-}
-footer #content h2 {
-  color: #e2e2e2;
-  font-style: normal;
-}
-footer #content small {
-  font-size: 15px;
-  color: white;
-  margin-top: 40px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.hero {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/trees.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.hero h1 {
-  font-size: 5em;
-  animation: fadeIn;
-  animation-duration: 3s;
+  height: 100%;
   margin: 0;
 }
-.hero h2 {
-  animation: fadeIn;
-  animation-duration: 3s;
+
+img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
-.hero .btn {
-  display: block;
-  width: 200px;
-  padding: 0.75em;
-  margin: 50px auto 0 auto;
-  color: white;
+
+a {
   text-decoration: none;
-  font-size: 1.5em;
-  animation: fadeIn;
-  animation-duration: 3s;
-  border: 3px solid white;
-  border-radius: 20px;
+  color: white !important;
+  background-color: black;
+  padding: 24px 86px;
+  font-family: Myriad Pro;
+  font-size: 36px;
+  border-radius: 5px;
+  width: 298px;
+  text-align: center;
+  position: relative;
+  top: calc(100vh - 110px);
+  left: 50px;
+  transform: translate(20px, 20px);
 }
-.hero .btn:hover {
+
+a:hover {
   text-decoration: underline;
 }
 
-main {
-  width: 80%;
-  margin: 0px auto;
-}
-main h2 {
-  font-size: 3em;
-}
-main #who {
-  margin: 25vh 0;
+.hero-inner {
   display: flex;
-  flex-flow: row wrap;
-  align-items: start;
-  justify-content: space-evenly;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -120px;
 }
-main #who #text {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: start;
-}
-main #who #text h3 {
-  margin: 30px 0;
-}
-main #who #text p {
-  margin: 0;
-  max-width: 30em;
-  font-size: 1.5em;
-  line-height: 1.75em;
-  margin-left: 2em;
-}
-main #who img {
-  max-width: 550px;
-  margin-top: 2em;
-}
-main section#skills {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  justify-items: center;
-  margin: 25vh auto;
-}
-main section#skills h3 {
-  margin-left: 30px;
-  margin-bottom: 0;
-}
-main section#skills ul {
-  list-style-type: none;
-}
-main section#skills ul li {
-  font-size: 1.5em;
-  line-height: 1.75em;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 1400px) {
-  .hero h1 {
-    font-size: 10vw !important;
-  }
-
-  main {
-    width: 90%;
-  }
-  main h2 {
-    font-size: 2.5em !important;
-  }
-  main #who p {
-    width: 90vw !important;
-    margin-bottom: 50px !important;
-    margin-left: 0 !important;
-  }
-  main #who img {
-    width: 80vw !important;
-  }
-  main section#projects h2 {
-    font-size: 2em !important;
-  }
-  main section#projects h3 {
-    font-size: 1.3em !important;
-  }
-  main section#skills h2 {
-    margin-left: 0 !important;
-  }
-  main section#skills ul li {
-    margin-left: 0 !important;
-    text-align: center;
-  }
+.hero-inner h3 {
+  position: relative;
+  top: -40px;
+  left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
