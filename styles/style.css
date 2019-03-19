@@ -6,6 +6,7 @@ h1 {
   font-family: Niagara-Solid;
   font-size: 170px;
   letter-spacing: 0.07em;
+  line-height: 0.8em;
   font-weight: normal;
   margin: 0;
 }
@@ -15,63 +16,114 @@ h2 {
   font-size: 60px;
   letter-spacing: 0.07em;
   font-weight: normal;
+  margin: 0;
 }
 
 h3 {
-  font-family: Myriad Pro;
+  font-family: "PT Sans", sans-serif;
   font-size: 36px;
   letter-spacing: 0.05em;
   font-weight: normal;
 }
 
+h4 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  margin: 0px 0px;
+}
+
 html, body {
-  height: 100%;
   margin: 0;
 }
 
-img {
-  width: 100px;
-  height: auto;
-  position: absolute;
-  top: 50px;
-  left: 50px;
+#hero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 100px);
+  margin: auto;
+  padding-top: 50px;
 }
-
-a {
+#hero img#logo {
+  width: 60px;
+}
+#hero #hero-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero #hero-inner #hero-text h3 {
+  margin: 0;
+  padding: 10px 0px 0px 10px;
+}
+#hero #hero-inner img#githubLogo {
+  width: 40px;
+  height: 40px;
+}
+#hero a#resume {
+  color: white;
   text-decoration: none;
-  color: white !important;
-  background-color: black;
-  padding: 24px 86px;
-  font-family: Myriad Pro;
-  font-size: 36px;
-  border-radius: 5px;
-  width: 298px;
   text-align: center;
-  position: relative;
-  top: calc(100vh - 110px);
-  left: 50px;
-  transform: translate(20px, 20px);
+  background-color: black;
+  width: 298px;
+  padding: 7px;
+  border-radius: 5px;
 }
-
-a:hover {
+#hero a#resume h3 {
+  margin: 0;
+  font-size: 25px;
+}
+#hero a:hover {
   text-decoration: underline;
 }
 
-.hero-inner {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  margin-top: -120px;
+main {
+  margin: auto;
+  margin-top: 150px;
+  width: calc(100vw - 100px);
 }
-.hero-inner h3 {
-  position: relative;
-  top: -40px;
-  left: 5px;
+
+section#aboutMe {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+section#aboutMe div.text {
+  width: calc(50vw - 75px);
+}
+section#aboutMe div.text h4 {
+  margin-top: 20px;
+}
+section#aboutMe img {
+  width: calc(50vw - 75px);
+}
+
+section#projects {
+  margin-top: 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+section#projects #item {
+  width: calc(50vw - 75px);
+}
+section#projects #item img {
+  width: calc(50vw - 75px);
+}
+section#projects #item #text {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section#projects #item #text #links img {
+  width: 45px;
+  margin: 0px 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

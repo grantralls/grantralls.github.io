@@ -7,6 +7,7 @@ h1 {
   font-family: Niagara-Solid;
   font-size: 170px;
   letter-spacing: 0.07em;
+  line-height: .8em;
   font-weight: normal;
   margin: 0;
 }
@@ -16,21 +17,26 @@ h2 {
   font-size: 60px;
   letter-spacing: 0.07em;
   font-weight: normal;
+  margin: 0;
 }
 
 h3 {
-  font-family: Myriad Pro;
+  font-family: 'PT Sans', sans-serif;
   font-size: 36px;
   letter-spacing: 0.05em;
   font-weight: normal;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+h4 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  margin: 0px 0px;
 }
 
-body {
+html, body {
+  margin: 0;
 }
 
 @import 'hero';

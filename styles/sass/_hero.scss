@@ -1,46 +1,56 @@
-img {
-  width: 100px;
-  height: auto;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
+#hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 
-a {
-  text-decoration: none;
-  color: white !important;
-  background-color: black;
-  padding: 24px 86px;
-  font-family: Myriad Pro;
-  font-size: 36px;
-  border-radius: 5px;
-  width: 298px;
-  text-align: center;
-  position: relative;
-  top: calc(100vh - 110px);
-  left: 50px;
-  transform: translate(20px, 20px);
-}
+    height: calc(100vh - 100px);
+    width: calc(100vw - 100px);
 
-a:hover {
-  text-decoration: underline;
-}
+    margin: auto;
+    padding-top: 50px;
 
-.hero-inner {
+    img#logo {
+        width: 60px;
+    }
 
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  margin-top: -120px;
+    #hero-inner {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
 
-  h3 {
-    position: relative;
-    top: -40px;
-    left: 5px;
-  }
+        #hero-text {
+            h3 {
+                margin: 0;
+                padding: 10px 0px 0px 10px;
+            }
+        }
+
+        img#githubLogo {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    a#resume {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+
+        background-color: black;
+
+        width: 298px;
+        padding: 7px;
+
+        border-radius: 5px;
+
+        h3 {
+            margin: 0;
+            font-size: 25px;
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
 }
