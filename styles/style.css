@@ -84,29 +84,30 @@ html, body {
 main {
   margin: auto;
   margin-top: 150px;
-  width: calc(100vw - 100px);
 }
 
 section#aboutMe {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
 section#aboutMe div.text {
-  width: calc(50vw - 75px);
+  max-width: 615px;
+  margin: 0 auto;
 }
 section#aboutMe div.text h4 {
   margin-top: 20px;
 }
 section#aboutMe img {
-  width: calc(50vw - 75px);
+  max-width: 500px;
+  margin: auto;
 }
 
 section#projects {
   margin-top: 150px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 section#projects #item {
