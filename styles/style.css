@@ -103,15 +103,15 @@ html, body {
     width: 100% !important;
     min-width: 0px !important;
   }
-  section#projects .item #text h2 {
+  section#projects .item .text h2 {
     text-align: center;
     font-size: 40px;
     margin: auto;
   }
-  section#projects .item #text #links {
+  section#projects .item .text .links {
     margin: auto;
   }
-  section#projects .item #text #links img {
+  section#projects .item .text .links img {
     width: 30px !important;
     margin-top: 10px !important;
   }
@@ -202,13 +202,13 @@ section#projects .item img {
   width: 100%;
   height: auto;
 }
-section#projects .item #text {
+section#projects .item .text {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
-section#projects .item #text #links img {
+section#projects .item .text .links img {
   width: 45px;
   margin: 0px 25px;
 }
