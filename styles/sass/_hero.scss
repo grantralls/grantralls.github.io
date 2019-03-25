@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+
     height: calc(100vh - 100px);
     width: 100%;
 
@@ -26,8 +27,8 @@
         }
 
         a#githubLogo {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
 
             img {
                 width: 100%;
@@ -51,11 +52,12 @@
 
         h3 {
             margin: 0;
+            
             font-size: 25px;
         }
     }
-    a:hover {
+
+    a#resume:hover {
         text-decoration: underline;
     }
-
  }

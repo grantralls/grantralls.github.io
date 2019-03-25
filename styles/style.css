@@ -139,8 +139,8 @@ html, body {
   padding: 10px 0px 0px 10px;
 }
 #hero #hero-inner a#githubLogo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 #hero #hero-inner a#githubLogo img {
   width: 100%;
@@ -160,44 +160,43 @@ html, body {
   margin: 0;
   font-size: 25px;
 }
-#hero a:hover {
+#hero a#resume:hover {
   text-decoration: underline;
 }
 
 main {
   margin: auto;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 section#aboutMe {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   align-items: flex-start;
-  justify-content: space-between;
   margin: auto;
 }
 section#aboutMe div.text {
-  margin: auto;
-  width: 50%;
+  width: 40%;
 }
 section#aboutMe div.text h4 {
   margin-top: 20px;
 }
 section#aboutMe img {
-  margin: auto;
+  width: 40%;
   min-width: 500px;
-  width: 50%;
 }
 
 section#projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-top: 200px;
 }
 section#projects .item {
-  margin: auto;
-  width: 50%;
+  width: 40%;
   min-width: 500px;
+  margin: auto;
 }
 section#projects .item img {
   width: 100%;
@@ -206,11 +205,8 @@ section#projects .item img {
 section#projects .item #text {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: space-between;
-}
-section#projects .item #text #links {
-  margin: auto;
+  align-items: center;
 }
 section#projects .item #text #links img {
   width: 45px;
