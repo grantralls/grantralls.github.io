@@ -1,17 +1,18 @@
 main {
     margin: auto;
     margin-top: 150px;
-    width: calc(100vw - 100px);
 }
 
 section#aboutMe {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
+    margin: auto;
 
     div.text {
-        width: calc(50vw - 75px);
+        margin: auto;
+        width: 50%;
 
         h4 {
             margin-top: 20px;
@@ -19,35 +20,48 @@ section#aboutMe {
     }
     
     img {
-        width: calc(50vw - 75px);
+        margin: auto;
+        min-width: 500px;
+        width: 50%;
 
     }
 }
 
 section#projects {
-    margin-top: 150px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 
-    #item {
-        width: calc(50vw - 75px);
+
+    .item {
+        margin: auto;
+        width: 50%;
+        min-width: 500px;
 
         img {
-            width: calc(50vw - 75px);
+            width: 100%;
+            height: auto;
         }
+
         #text {
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             align-items: center;
             justify-content: space-between;
 
             #links {
+                margin: auto;
                 img {
                     width: 45px;
                     margin: 0px 25px;
                 }
             }
+        }
+    }
+
+    #jobApp {
+        .notAvailable {
+            filter: opacity(.5);
         }
     }
 }

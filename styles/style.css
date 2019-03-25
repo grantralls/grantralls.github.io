@@ -36,14 +36,92 @@ h4 {
 
 html, body {
   margin: 0;
+  padding: 0 50px;
 }
 
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 50px;
+    letter-spacing: 0.07em;
+  }
+
+  h3 {
+    font-size: 36px;
+    letter-spacing: 0.05em;
+  }
+
+  h4 {
+    font-size: 25px;
+    letter-spacing: 0.05em;
+  }
+
+  html, body {
+    padding: 0 20px !important;
+  }
+
+  #hero #hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  #hero #hero-text h3 {
+    padding: 0 !important;
+  }
+  #hero a#githubLogo {
+    width: 60px;
+    position: absolute;
+    top: 50px;
+    left: calc(100vw - 100px);
+  }
+  #hero a#githubLogo img {
+    width: 100%;
+    height: 100%;
+  }
+  #hero a#resume {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section#aboutMe {
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+  section#aboutMe div.text {
+    width: 100% !important;
+  }
+  section#aboutMe img {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-top: 25px !important;
+  }
+
+  section#projects .item {
+    margin-top: 50px !important;
+    width: 100% !important;
+    min-width: 0px !important;
+  }
+  section#projects .item #text h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+  }
+  section#projects .item #text #links {
+    margin: auto;
+  }
+  section#projects .item #text #links img {
+    width: 30px !important;
+    margin-top: 10px !important;
+  }
+}
 #hero {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   height: calc(100vh - 100px);
-  width: calc(100vw - 100px);
+  width: 100%;
   margin: auto;
   padding-top: 50px;
 }
@@ -60,16 +138,21 @@ html, body {
   margin: 0;
   padding: 10px 0px 0px 10px;
 }
-#hero #hero-inner img#githubLogo {
+#hero #hero-inner a#githubLogo {
   width: 40px;
   height: 40px;
+}
+#hero #hero-inner a#githubLogo img {
+  width: 100%;
+  height: 100%;
 }
 #hero a#resume {
   color: white;
   text-decoration: none;
   text-align: center;
   background-color: black;
-  width: 298px;
+  width: 20%;
+  min-width: 250px;
   padding: 7px;
   border-radius: 5px;
 }
@@ -84,46 +167,57 @@ html, body {
 main {
   margin: auto;
   margin-top: 150px;
-  width: calc(100vw - 100px);
 }
 
 section#aboutMe {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
+  margin: auto;
 }
 section#aboutMe div.text {
-  width: calc(50vw - 75px);
+  margin: auto;
+  width: 50%;
 }
 section#aboutMe div.text h4 {
   margin-top: 20px;
 }
 section#aboutMe img {
-  width: calc(50vw - 75px);
+  margin: auto;
+  min-width: 500px;
+  width: 50%;
 }
 
 section#projects {
-  margin-top: 150px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
-section#projects #item {
-  width: calc(50vw - 75px);
+section#projects .item {
+  margin: auto;
+  width: 50%;
+  min-width: 500px;
 }
-section#projects #item img {
-  width: calc(50vw - 75px);
+section#projects .item img {
+  width: 100%;
+  height: auto;
 }
-section#projects #item #text {
+section#projects .item #text {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 }
-section#projects #item #text #links img {
+section#projects .item #text #links {
+  margin: auto;
+}
+section#projects .item #text #links img {
   width: 45px;
   margin: 0px 25px;
+}
+section#projects #jobApp .notAvailable {
+  filter: opacity(0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

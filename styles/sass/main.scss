@@ -37,8 +37,9 @@ h4 {
 
 html, body {
   margin: 0;
+  padding: 0 50px;
 }
 
+@import 'mobile';
 @import 'hero';
 @import 'content';
-@import 'mobile';
