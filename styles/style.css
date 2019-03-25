@@ -55,7 +55,7 @@ html, body {
   }
 
   h4 {
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.05em;
   }
 
@@ -214,6 +214,16 @@ section#projects .item #text #links img {
 }
 section#projects #jobApp .notAvailable {
   filter: opacity(0.5);
+}
+
+footer {
+  margin: 200px 0px;
+}
+footer h2 {
+  margin-bottom: 20px;
+}
+footer h4 {
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
