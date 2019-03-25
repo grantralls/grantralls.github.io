@@ -1,0 +1,81 @@
+main {
+    margin: auto;
+    margin-top: 200px;
+}
+
+section#aboutMe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    margin: auto;
+
+    div.text {
+        width: 40%;
+
+        h4 {
+            margin-top: 20px;
+        }
+    }
+    
+    img {
+        width: 40%;
+        min-width: 500px;
+
+    }
+}
+
+section#projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    margin-top: 200px;
+
+    .item {
+        width: 40%;
+        min-width: 500px;
+
+        margin: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .links {
+                img {
+                    width: 45px;
+                    
+                    margin: 0px 25px;
+                }
+            }
+        }
+    }
+
+    #jobApp {
+        .notAvailable {
+            filter: opacity(.5);
+        }
+    }
+
+}
+
+footer {
+    margin: 200px 0px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        margin-bottom: 5px;
+    }
+}

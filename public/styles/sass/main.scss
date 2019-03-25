@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Niagara-Solid";
-  src: url('../public/fonts/NIAGSOL.TTF')
+  src: url('../fonts/NIAGSOL.TTF')
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url('../fonts/PT_Sans.ttf');
 }
 
 h1 {
@@ -37,8 +42,9 @@ h4 {
 
 html, body {
   margin: 0;
+  padding: 0 50px;
 }
 
+@import 'mobile';
 @import 'hero';
 @import 'content';
-@import 'mobile';
