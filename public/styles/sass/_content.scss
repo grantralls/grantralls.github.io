@@ -50,9 +50,15 @@ section#projects {
             justify-content: space-between;
             align-items: center;
 
+            h2 {
+                margin: auto;
+            }
+
             .links {
+                margin: auto;
+
                 img {
-                    width: 45px;
+                    width: 40px;
                     
                     margin: 0px 25px;
                 }

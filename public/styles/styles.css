@@ -212,8 +212,14 @@ section#projects .item .text {
   justify-content: space-between;
   align-items: center;
 }
+section#projects .item .text h2 {
+  margin: auto;
+}
+section#projects .item .text .links {
+  margin: auto;
+}
 section#projects .item .text .links img {
-  width: 45px;
+  width: 40px;
   margin: 0px 25px;
 }
 section#projects #jobApp .notAvailable {
@@ -230,4 +236,4 @@ footer h4 {
   margin-bottom: 5px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
