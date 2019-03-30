@@ -92,7 +92,11 @@ html, body {
   section#aboutMe div.text {
     width: 100% !important;
   }
-  section#aboutMe img {
+  section#aboutMe picture {
+    width: 100% !important;
+    min-width: 0px !important;
+  }
+  section#aboutMe picture img {
     width: 100% !important;
     min-width: 0 !important;
     margin-top: 25px !important;
@@ -182,9 +186,12 @@ section#aboutMe div.text {
 section#aboutMe div.text h4 {
   margin-top: 20px;
 }
-section#aboutMe img {
+section#aboutMe picture {
+  min-width: 400px;
   width: 40%;
-  min-width: 500px;
+}
+section#aboutMe picture img {
+  width: 100%;
 }
 
 section#projects {
@@ -195,7 +202,7 @@ section#projects {
 }
 section#projects .item {
   width: 40%;
-  min-width: 500px;
+  min-width: 100px;
   margin: auto;
 }
 section#projects .item img {

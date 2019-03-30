@@ -19,10 +19,13 @@ section#aboutMe {
         }
     }
     
-    img {
+    picture {
+        min-width: 400px;
         width: 40%;
-        min-width: 500px;
 
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -35,7 +38,7 @@ section#projects {
 
     .item {
         width: 40%;
-        min-width: 500px;
+        min-width: 100px;
 
         margin: auto;
 

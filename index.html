@@ -32,13 +32,41 @@
           <h2>About Me</h2>
           <h4>My name is Grant and I am a Fullstack Developer based in Hampton, Virginia. I build transformative, robust solutions using web technologies. I specialize in the MERN stack but I have experience in the LAMP and Django stacks.</h4>
         </div>
-        <img src="public/images/portrait.jpg" alt="my portrait">
+        <picture>
+          <source 
+            media="(min-width: 1000px)"
+            srcset="https://aswevtgxen.cloudimg.io/width/600/x/https://grantralls.net/public/images/portrait.jpg"
+          >
+          <source
+            media="(min-width: 750px)"
+            srcset="https://aswevtgxen.cloudimg.io/width/500/x/https://grantralls.net/public/images/portrait.jpg"
+          >
+          <source
+            media="(min-width: 0px)"
+            srcset="https://aswevtgxen.cloudimg.io/width/400/x/https://grantralls.net/public/images/portrait.jpg"
+          >
+          <img src="https://grantralls.net/public/images/portrait.jpg" alt="portrait image">
+        </picture>
       </section>
 
       <section id="projects">
 
         <div class="item">
-          <img src="public/images/money_image.jpg" alt="counting money">
+          <picture>
+            <source 
+              media="(min-width: 1000px)"
+              srcset="https://aswevtgxen.cloudimg.io/width/600/x/https://grantralls.net/public/images/money_image.jpg"
+            >
+            <source
+              media="(min-width: 750px)"
+              srcset="https://aswevtgxen.cloudimg.io/width/500/x/https://grantralls.net/public/images/money_image.jpg"
+            >
+            <source
+              media="(min-width: 0px)"
+              srcset="https://aswevtgxen.cloudimg.io/width/400/x/https://grantralls.net/public/images/money_image.jpg"
+            >
+            <img src="https://grantralls.net/public/images/money_image.jpg" alt="Image of money">
+          </picture>
           <div class="text">
             <h2>Safe Count System</h2>
             <div class="links">
@@ -49,7 +77,21 @@
         </div>
 
         <div class="item" id="jobApp">
-          <img src="public/images/suit_image.jpg" alt="counting money">
+          <picture>
+            <source 
+              media="(min-width: 1000px)"
+              srcset="https://aswevtgxen.cloudimg.io/width/600/x/https://grantralls.net/public/images/suit_image.jpg"
+            >
+            <source
+              media="(min-width: 750px)"
+              srcset="https://aswevtgxen.cloudimg.io/width/500/x/https://grantralls.net/public/images/suit_image.jpg"
+            >
+            <source
+              media="(min-width: 0px)"
+              srcset="https://aswevtgxen.cloudimg.io/width/400/x/https://grantralls.net/public/images/suit_image.jpg"
+            >
+            <img src="https://grantralls.net/public/images/suit_image.jpg" alt="Image of man in a suit">
+          </picture>
           <div class="text">
             <h2>Job Application System</h2>
             <div class="links">

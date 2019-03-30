@@ -60,11 +60,15 @@
         width: 100% !important;
     }
     
-    img {
+    picture {
       width: 100% !important;
-      min-width: 0 !important;
-      margin-top: 25px !important;
-
+      min-width: 0px !important;
+      img {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin-top: 25px !important;
+  
+      }
     }
   }
 
